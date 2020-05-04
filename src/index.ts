@@ -3,14 +3,14 @@ import "./style.css";
 
 import oneup from "./assets/1up.ogg";
 import gameover from "./assets/gameover.ogg";
-import pipe from "./assets/土管.ogg";
-import tread from "./assets/踏む.ogg";
-import kick from "./assets/蹴る.ogg";
-import coin from "./assets/コイン.ogg";
-import jump from "./assets/ジャンプ.ogg";
-import block from "./assets/ブロック.ogg";
-import powerup from "./assets/パワーアップ.ogg";
-import fireball from "./assets/ファイアーボール.ogg";
+import pipe from "./assets/pipe.ogg";
+import tread from "./assets/tread.ogg";
+import kick from "./assets/kick.ogg";
+import coin from "./assets/coin.ogg";
+import jump from "./assets/jump.ogg";
+import block from "./assets/block.ogg";
+import powerup from "./assets/powerup.ogg";
+import fireball from "./assets/fireball.ogg";
 
 const addPlayListener = (elementId: string, src: string) => {
   const audio = new Audio();
