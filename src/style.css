@@ -5,12 +5,12 @@
 }
 
 body {
-  font-family: PixelMplus12-Bold;
+  font-family: PixelMplus12-Bold-subset;
 }
 
 @font-face {
-  font-family: PixelMplus12-Bold;
-  src: url("/PixelMplus12-Bold.ttf") format("truetype");
+  font-family: PixelMplus12-Bold-subset;
+  src: url("/PixelMplus12-Bold-subset.ttf") format("truetype");
   font-display: swap;
   font-weight: bold;
 }
