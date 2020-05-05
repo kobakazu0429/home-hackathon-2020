@@ -64,6 +64,7 @@ main {
   text-align: center;
   color: white;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .se-button:not(:nth-last-child(-n + 2)) {
