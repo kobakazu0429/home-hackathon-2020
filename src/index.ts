@@ -28,6 +28,8 @@ const addPlayListener = (elementId: string, src: string) => {
   const element = document.getElementById(elementId);
   if (!element) return;
   element.addEventListener("click", () => {
+    audio.currentTime = 0;
+
     audio.play();
   });
 };
