@@ -20,9 +20,7 @@
       "eslint --ext .ts,.tsx ./src --fix"
     ]
   },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "12.12.37",
     "@typescript-eslint/eslint-plugin": "2.30.0",
