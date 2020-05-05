@@ -23,9 +23,7 @@ import powerupMp3 from "./assets/powerup.mp3";
 import fireballMp3 from "./assets/fireball.mp3";
 
 const addPlayListener = (elementId: string, src: string) => {
-  const audio = new Audio();
-  audio.preload = "none";
-  audio.src = src;
+  const audio = new Audio(src);
 
   const element = document.getElementById(elementId);
   if (!element) return;
