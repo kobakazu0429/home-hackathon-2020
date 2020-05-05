@@ -1,4 +1,3 @@
-import "normalize.css";
 import "./style.css";
 
 import oneup from "./assets/1up.ogg";

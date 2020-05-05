@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   resolve: {
@@ -23,10 +24,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: [
-          "style-loader",
-          { loader: "css-loader", options: { url: false } }
-        ]
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          'css-loader',
+        ],
       },
       {
         test: /\.(ogg|mp3|woff|woff2|eot|ttf|svg)$/i,
@@ -47,6 +50,9 @@ module.exports = {
     new CopyPlugin([
       { from: path.resolve(__dirname, "fonts"), to: path.resolve(__dirname, "dist") }
     ]),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
   ],
 
   devServer: {
